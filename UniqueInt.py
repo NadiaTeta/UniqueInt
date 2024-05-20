@@ -25,6 +25,6 @@ class UniqueInt:
 
 if __name__ == "__main__":
     unique_int_processor = UniqueInt()
-    input_file = "/UniqueInt/sample_input_for_students/sample_02.txt"
-    output_file = "/UniqueInt/results_for_sample_inputs/sample_02.txt_result.txt"
+    input_file = "/sample_input_for_students/sample_02.txt"
+    output_file = "/results_for_sample_inputs/sample_02.txt_result.txt"
     unique_int_processor.process_file(input_file, output_file)
