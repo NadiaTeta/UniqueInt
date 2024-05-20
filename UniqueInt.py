@@ -1,8 +1,4 @@
 #!/usr/bin/python3
-<<<<<<< HEAD
-with open(input_file_path, "r") as x:
-  lines = x.readlines()
-=======
 import os
 class UniqueInt:
   def __init__(self):
@@ -24,7 +20,6 @@ class UniqueInt:
     except FileNotFoundError:
       print(f"File '{file_path}' not found.")
       return sorted(unique_integers)
->>>>>>> origin/main
 
 def write_unique_integers_to_file(unique_integers, output_file_path):
   """
@@ -42,7 +37,6 @@ if __name__ == "__main__":
   input_file_path = "/UniqueInt/sample_input_for_students/sample_02.txt"
   output_file_path = "/UniqueInt/results_for_sample_inputs/sample_02.txt_result.txt
 
-<<<<<<< HEAD
 unique = list(set(sorted_numbers))
 
 with open("results.txt", "a") as n:
