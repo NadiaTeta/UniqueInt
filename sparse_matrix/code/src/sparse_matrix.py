@@ -71,7 +71,6 @@ def select_operation():
 def main():
     file1 = input("Enter the path to the first matrix file: ")
     file2 = input("Enter the path to the second matrix file: ")
-    output_file = input("Enter the path to the output file: ")
 
     matrix1 = SparseMatrix.from_file(file1)
     matrix2 = SparseMatrix.from_file(file2)
@@ -88,9 +87,8 @@ def main():
         print("Invalid choice")
         return
 
-    with open(output_file, 'w') as f:
-        for (row, col), value in result.elements.items():
-            f.write(f"({row}, {col}, {value})\n")
+    for (row, col), value in result.elements.items():
+        print(f"({row}, {col}, {value})")
 
 if __name__ == "__main__":
     main()
